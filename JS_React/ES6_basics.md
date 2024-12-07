@@ -176,4 +176,97 @@ console.log(getInfo(1,2,3,4,5,6,7))
 
 // Output: 1 2 [ 3, 4, 5, 6, 7 ]
 ```
-This will give the value of first two parameters and spread ( retuen in a list ) the remaining parameters values
+This will give the value of first two parameters and spread ( retuen in a list ) the remaining parameters values.
+
+---
+
+## Important Functions
+- map()
+- filter()
+- find()
+- some()
+- every()
+- includes()
+- indexOf()
+- findIndex()
+
+Creatng an array to test all the functions 
+
+```
+const persons = [
+  {
+    name: 'person01',
+    age: 30,
+    country: 'PAK',
+  },
+  {
+    name: 'person01',
+    age: 30,
+    country: 'PAK',
+  }]
+```
+
+- Map Function [ map() ]
+
+Let's get all the names from the `persons` array. Map function will give index to all the objects in the list
+and give a name to each object in out case its `singlePersons` and then we can get the names using `singlePersons.name`
+  
+```
+const getNameMap = persons.map((singlePersons, index) => {
+  return singlePersons.name
+})
+  
+console.log(getNameMap) // Ouput: [ 'person01', 'person01' ]
+```
+
+- Find & Filter Function [ find(), filter() ]
+It will check the condition and returns the first thing that fulfills the condition. While `filter()` will return all the matching things.
+
+```
+const getNameMap = persons.find((singlePersons, index) => {
+  return singlePersons.country === 'USA'
+})
+  
+console.log(getNameMap) 
+
+// Ouput: { name: 'person01', age: 35, country: 'USA' }
+```
+  
+```
+const getNameMap = persons.filter((singlePersons, index) => {
+  return singlePersons.country === 'USA'
+})
+  
+console.log(getNameMap) 
+
+// Ouput: 
+// [
+//   { name: 'person01', age: 35, country: 'USA' },
+//   { name: 'person01', age: 35, country: 'USA' }
+// ]
+```
+
+- Some & Every Function [ some(), every() ]
+`some` will return `true` if condition is satisfied even once but `every` will only return true when condition is satisfied for all the things.
+
+`` 
+const conditionCheck = persons.some(singlePerson => {
+  return singlePerson.age > 30
+})
+
+console.log(conditionCheck)
+
+// Ouput: true
+```
+
+```
+const conditionCheck = persons.every(singlePerson => {
+  return singlePerson.age > 30
+})
+
+console.log(conditionCheck)
+
+// Ouput: false
+```
+
+Ouput is false for `every()` because it check if age of all the persons in the array is greater than 30 then it would rturn `true`.
