@@ -249,7 +249,7 @@ console.log(getNameMap)
 - Some & Every Function [ some(), every() ]
 `some` will return `true` if condition is satisfied even once but `every` will only return true when condition is satisfied for all the things.
 
-`` 
+```
 const conditionCheck = persons.some(singlePerson => {
   return singlePerson.age > 30
 })
