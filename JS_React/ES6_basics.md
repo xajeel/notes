@@ -31,3 +31,44 @@ console.log(a && myName('sajeel'));
 // Ouput: False
 
 ```
+
+---
+
+## Template Literals
+
+```
+let name1 = 'sajeel';
+let name2 = 'ali';
+```
+
+Want to merge these values to make one String
+```
+console.log(name1 + ' ' + name2);
+```
+
+But using literal we can do this 
+```
+console.log(`${name1} ${name2}`);
+```
+
+## Ternary Operator
+
+Lets say we have an situation where we want to return recipe1 when a certain flag is true & recipe2 when flag is false
+
+condition ? statement1 : statement2
+```
+let showRecipe = true;
+
+function getRecipeOne(name){
+  return name;
+}
+
+function getRecipeTwo(name){
+  return name;
+}
+
+showRecipe ? console.log(getRecipeOne('pizza')) : 
+console.log(getRecipeTwo('Coke'))
+```
+
+---
