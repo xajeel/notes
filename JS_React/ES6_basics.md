@@ -128,3 +128,52 @@ console.log(fisrt, second, third)
 ```
 
 If we give a fourth value in the [ ] we will get `undefined` as our array has only 3 elements.
+
+---
+
+## Functions 
+
+```
+function mulNumber(num1, num2){
+  return num1*num2;
+}
+
+console.log(mulNumber(3, 5))
+```
+
+function with default parameters 
+
+```
+function mulNumber2(num1=2, num2=4){
+  return num1*num1
+}
+
+console.log(mulNumber2())
+```
+
+spread
+
+```
+const array1 = [1,2,3]
+const array2 = [11,12,13]
+
+console.log(array1)                     // Ouput: [ 1, 2, 3 ]
+console.log(... array1)                 // Output: 1 2 3
+console.log(...array1, ...array2)       // Output: 1 2 3 11 12 13
+console.log([...array1, ...array2])     // Output: [ 1, 2, 3, 11, 12, 13 ]
+console.log(0,99, ...array1, ...array2) // Output: 0 99 1 2 3 11 12 13
+```
+
+Rest Parameters 
+We can give the spread a function parameter as well but it will b the last parameter in parameter 
+
+```
+function getInfo(a, b, ...c){
+  console.log(a, b, c);
+  return '';
+}
+console.log(getInfo(1,2,3,4,5,6,7))
+
+// Output: 1 2 [ 3, 4, 5, 6, 7 ]
+```
+This will give the value of first two parameters and spread ( retuen in a list ) the remaining parameters values
