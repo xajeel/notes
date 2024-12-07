@@ -72,3 +72,59 @@ console.log(getRecipeTwo('Coke'))
 ```
 
 ---
+
+## Objects ( Dictionary )
+
+```
+const id = 1;
+const productName = 'Apple';
+const ratting = 5;
+
+const product = {
+  id:id,
+  productName: productName,
+  ratting: ratting,
+};
+
+console.log(product);
+
+// Ouput: { id: 1, productName: 'Apple', ratting: 5 }
+```
+
+Short hand property: When the key & value names are same then we can only write keys names
+
+```
+const product2 ={
+  id,
+  productName,
+  ratting,
+};
+
+console.log(product2);
+
+// Ouput: { id: 1, productName: 'Apple', ratting: 5 }
+```
+
+To get something ( value ) from the dictionary we can use 
+
+```
+console.log(product.productName);
+```
+
+We can do the same thing by Deconstructing the Object and giving and alias ( Here `x` is alias)
+
+```
+const {ratting: x} = product2;
+console.log(x)
+```
+
+In case of array 
+
+```
+let array = [1,2,3]
+
+const [fisrt, second, third] = array
+console.log(fisrt, second, third)
+```
+
+If we give a fourth value in the [ ] we will get `undefined` as our array has only 3 elements.
