@@ -29,3 +29,13 @@ nvidia-smi
 If it runs then ok. If it does not run then reboot the device.
 
 ## Step Two
+
+After `step 01` go the following page & select the relavent options
+
+Link: https://developer.nvidia.com/cuda-toolkit-archive
+
+then just copy paste the two commands & after doing it just check the cuda using 
+
+```
+nvcc --version 
+```
