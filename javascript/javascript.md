@@ -4,8 +4,8 @@
 
 - Variables
 - Arrays
-- Objects
+- Objects [ object creation, `this` keyword ]
 - Scope
-- If else statements
+- If else statements [ if, else, else if, ternarry operator (?) ]
 - Loops
-- Functions
+- Functions [ simple functions, arrow function ]
