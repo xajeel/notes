@@ -39,3 +39,19 @@ then just copy paste the two commands & after doing it just check the cuda using
 ```
 nvcc --version 
 ```
+
+## Removing Installed Cuda 
+
+To remove installed version of CUDA from Ubuntu machine use the follwoing command 
+
+```
+sudo /usr/local/cuda-[version]/bin/cuda-uninstaller
+```
+
+then run the following commands but change the version name to your version name
+
+```
+echo 'export PATH=/usr/local/cuda-[version]/bin${PATH:+:${PATH}}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-[version]/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+source ~/.bashrc
+```
