@@ -24,7 +24,6 @@ sudo apt install -y build-essential libssl-dev
 ## Step 3: Download the CMake Source Code
 Download the source code for CMake 3.24 from its official website or use wget:
 
-
 ```bash
 wget https://github.com/Kitware/CMake/releases/download/v3.24.0/cmake-3.24.0.tar.gz
 ```
