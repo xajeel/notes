@@ -101,7 +101,8 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 
 ***Example Noteboo***
 
-![Python Notebook](https://colab.research.google.com/drive/1lLIXecoGKElb7e4nbEUBP-WQv4wCingu?usp=sharing)
+[Python Notebook](https://colab.research.google.com/drive/1lLIXecoGKElb7e4nbEUBP-WQv4wCingu?usp=sharing)
+
 
 ---
 
