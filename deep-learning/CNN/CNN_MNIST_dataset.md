@@ -97,7 +97,7 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 
 **Above Model's Each Layer output Shape**
 
-![alt text](images/image-2.png)
+![alt text](images/image3.png)
 
 ---
 
