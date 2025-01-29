@@ -99,6 +99,10 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 
 ![alt text](images/image3.png)
 
+***Example Noteboo***
+
+![Python Notebook](https://colab.research.google.com/drive/1lLIXecoGKElb7e4nbEUBP-WQv4wCingu?usp=sharing)
+
 ---
 
 ## **Step 5: Train the CNN Model**  
