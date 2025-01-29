@@ -85,6 +85,21 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 - **Dense Layers** are like the brain making decisions.  
 
 ---
+## **Calculating the Ouput Shapes**
+
+**Convolutional Layer Output**
+
+![alt text](image.png)
+
+**Max Pooling Output**
+
+![alt text](image-1.png)
+
+**Above Model's Each Layer output Shape**
+
+![alt text](image-2.png)
+
+---
 
 ## **Step 5: Train the CNN Model**  
 Now, we train the CNN for **5 epochs** (passes over the dataset).  
