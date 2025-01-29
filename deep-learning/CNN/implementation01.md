@@ -89,15 +89,15 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 
 **Convolutional Layer Output**
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 **Max Pooling Output**
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 **Above Model's Each Layer output Shape**
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ---
 
