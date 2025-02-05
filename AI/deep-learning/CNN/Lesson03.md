@@ -4,6 +4,8 @@ This Lesson demonstrates how to use the pre-trained VGG16 model with a Sequentia
 
 **Please Check out the Implementation Files before coming to this Lesson**
 
+[Custom Dataset Implementation](CNN_custom_dataset.md)
+
 ## Steps:
 - Load and preprocess your dataset.
 - Train the model using model.fit().
