@@ -1,4 +1,4 @@
-# LexAi Application Dockerizing 
+# Dockerizing Flask Application with SQLite Database 
 
 Create a `Dockerfile` in the root directory of the project. Then add the following lines in the `Dockerfile`.
 
