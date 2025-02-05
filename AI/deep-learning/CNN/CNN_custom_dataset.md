@@ -1,4 +1,4 @@
-### **Lesson Plan: Training a CNN on a Custom Dataset**  
+# **Training a CNN on a Custom Dataset**  
 
 ---
 
@@ -36,7 +36,7 @@ By the end of this lesson, students will learn:
 
 ---
 
-# **1️⃣ Loading a Custom Dataset**  
+## **1️⃣ Loading a Custom Dataset**  
 
 ### **Why Do We Need a Custom Dataset?**  
 MNIST contains handwritten digits, but real-world problems involve different kinds of images. Suppose we want to build a model to classify **dogs vs. cats**—we need to load a dataset containing **dog** and **cat** images.  
@@ -92,7 +92,7 @@ print(class_names)
 
 ---
 
-# **2️⃣ Data Augmentation**  
+## **2️⃣ Data Augmentation**  
 
 ### **What is Data Augmentation?**  
 📌 Data augmentation **creates new variations** of images to improve model learning.  
@@ -133,7 +133,7 @@ image_batch, labels_batch = next(iter(normalized_ds))
 
 ---
 
-# **4️⃣ Building a CNN Model**  
+## **4️⃣ Building a CNN Model**  
 
 **📌 CNN Architecture for Image Classification:**  
 
@@ -168,7 +168,7 @@ model.summary()
 
 ---
 
-# **5️⃣ Training and Evaluating the Model**  
+## **5️⃣ Training and Evaluating the Model**  
 
 ### **📌 Training the Model:**  
 
@@ -189,7 +189,7 @@ print(f"Test accuracy: {test_acc:.4f}")
 
 ---
 
-# **Conclusion 🎯**  
+## **Conclusion 🎯**  
 ✔ We **loaded** a custom dataset of images.  
 ✔ We **augmented** the data for better generalization.  
 ✔ We **split** the dataset into training, validation, and test sets.  

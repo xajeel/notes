@@ -1,4 +1,4 @@
-### **Tutorial: Training a Simple CNN on MNIST using TensorFlow**  
+# **Training a Simple CNN on MNIST using TensorFlow**  
 
 ### **Objective:**  
 In this tutorial, we will:  

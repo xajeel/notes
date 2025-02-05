@@ -1,4 +1,4 @@
-### **Lesson: Introduction to Convolutional Neural Networks (CNNs) – For 10th-Class Students**  
+# **Introduction to Convolutional Neural Networks (CNNs) – For 10th-Class Students**  
 
 #### **Objective:**  
 By the end of this lesson, students will understand:  
@@ -8,7 +8,7 @@ By the end of this lesson, students will understand:
 
 ---
 
-# **1️⃣ Introduction to CNNs**  
+## **1️⃣ Introduction to CNNs**  
 
 ### **What is a Neural Network?**  
 A **Neural Network** is like a mini **brain** inside a computer that learns from data. Just like our brain recognizes faces, letters, and objects, a neural network can recognize patterns in images.  
@@ -31,7 +31,7 @@ A normal neural network looks at every **pixel separately** and can’t understa
 
 ---
 
-# **2️⃣ CNN Architecture – How CNNs Work**  
+## **2️⃣ CNN Architecture – How CNNs Work**  
 
 CNNs process images in 4 main steps:  
 1️⃣ **Convolution Layer** – Finds edges, shapes, and patterns  
@@ -118,7 +118,7 @@ If a CNN detects **whiskers, ears, and fur**, it classifies the image as a **cat
 
 ---
 
-# **Conclusion 🎯**  
+## **Conclusion 🎯**  
 ✔ CNNs recognize patterns in images like the human brain.  
 ✔ CNNs work step by step: **Convolution, Activation (ReLU), Pooling, and Fully Connected Layer**.  
 ✔ **Stride controls movement**, and **Padding prevents image shrinkage**.  

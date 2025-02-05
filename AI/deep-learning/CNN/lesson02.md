@@ -1,4 +1,4 @@
-### **Lesson: Pooling, Downsampling, CNN Architectures, and Performance Improvement**  
+# **Pooling, Downsampling, CNN Architectures, and Performance Improvement**  
 
 #### **Objective:**  
 By the end of this lesson, students will understand:  
@@ -9,7 +9,7 @@ By the end of this lesson, students will understand:
 
 ---
 
-# **1️⃣ Pooling and Downsampling**  
+## **1️⃣ Pooling and Downsampling**  
 
 ### **Why Do We Need Pooling?**  
 After applying convolution, the image is still large, and we need to make it **smaller and faster** while keeping important features. This is where **pooling** helps!  
@@ -36,7 +36,7 @@ After applying convolution, the image is still large, and we need to make it **s
 
 ---
 
-# **2️⃣ CNN Architectures**  
+## **2️⃣ CNN Architectures**  
 
 ### **What is a CNN Architecture?**  
 A **CNN Architecture** is like a **blueprint** for how the CNN processes images. It decides:  
@@ -57,7 +57,7 @@ A **CNN Architecture** is like a **blueprint** for how the CNN processes images.
 
 ---
 
-# **3️⃣ Improving CNN Performance**  
+## **3️⃣ Improving CNN Performance**  
 
 ### **Why Improve Performance?**  
 A basic CNN might not always work well. We need techniques to make it:  
@@ -79,7 +79,7 @@ A basic CNN might not always work well. We need techniques to make it:
 
 ---
 
-# **Conclusion 🎯**  
+## **Conclusion 🎯**  
 ✔ Pooling and Downsampling reduce image size while keeping important features.  
 ✔ CNN Architectures define how a CNN processes images.  
 ✔ Popular architectures like LeNet, AlexNet, and ResNet improve image recognition.  
