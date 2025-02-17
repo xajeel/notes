@@ -1,5 +1,57 @@
 # Pyhton Logging & Custom Exception Code
 
+## Python Project Creating Template
+
+```python
+import os
+from pathlib import Path
+import logging
+
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s:')
+
+project_name = 'newssummerizer'
+
+list_of_files =[
+    ".github/workflows/.gitkeep",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",  
+    f"src/{project_name}/utils/common.py",
+    f"src/{project_name}/logging/__init__.py",
+    f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
+    f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/constants/__init__.py",
+    "config/config.yaml",
+    "params.yaml",
+    "app.py",
+    "main.py",
+    "Dockerfile",
+    "requirements.txt",
+    "setup.py",
+    "research/trials.ipynb"
+]
+
+for filepath in list_of_files:
+    
+    file_path = Path(filepath)
+    filedir, filnename = os.path.split(file_path)       # Spliting the path in folder & File
+
+    if filedir != "" :                                  # checking if the filedir is empity or not 
+        os.makedirs(filedir, exist_ok=True)
+        logging.info(f"Creating a directory {filedir} for file {filnename}")
+
+    # checking if file already exists or not
+    if (not os.path.exists(file_path)) or (os.path.getsize(file_path)==0):
+        with open(file_path, "w") as f:
+            pass
+            logging.info(f"Creating a new file: {file_path}")
+
+    else:
+        logging.info(f"{file_path} is already present")
+```
+
 ## Python Logging Code
 
 ``` bash 
