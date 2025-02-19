@@ -33,3 +33,15 @@ word_tokenize(sentence)
 
 # Both of these will return a List of words or sentences.
 ```
+
+## Example
+
+```python
+>>> from nltk.tokenize import word_tokenize
+
+>>> s = "Though there were 150, 100 of them were old."
+
+>>> word_tokenize(s)
+['Though', 'there', 'were', '150', ',', '100', 'of', 'them', 'were', 'old', '.']
+
+```

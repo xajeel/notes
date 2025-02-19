@@ -64,3 +64,18 @@ words = ['eating', 'playable', 'goes']
 for i in words:
 	print(snow_stemmer.stem(i))
 ```
+
+## Example
+
+```python
+
+>>> from nltk.stem.snowball import SnowballStemmer
+>>> snow_stemmer = SnowballStemmer('english')
+
+>>> print(stemmer.stem("running"))
+run
+
+>>> print(stemmer.stem("having"))
+have
+
+```

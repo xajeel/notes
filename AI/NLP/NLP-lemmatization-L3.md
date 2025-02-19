@@ -33,3 +33,27 @@ lemma.lemmatize(word, pos='n')
 for i in words:
 	print(lemma.lemmatize(i, pos='n'))
 ```
+
+## Exmaple
+
+```python
+>>> from nltk.stem import WordNetLemmatizer
+
+>>> lemma = WordNetLemmatizer()
+
+>>> print(lemma.lemmatize('dogs'))
+dog
+
+>>> print(lemma.lemmatize('churches'))
+church
+
+>>> print(lemma.lemmatize('aardwolves'))
+aardwolf
+
+>>> print(lemma.lemmatize('abaci'))
+abacus
+
+>>> print(lemma.lemmatize('hardrock'))
+hardrock
+
+```
