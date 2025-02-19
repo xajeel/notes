@@ -1,3 +1,5 @@
+# 1. Tokenization
+
 We take a paragraph or sentence and then convert it into tokens. Tokens can be sentences or words.
 
 **e.g.**
