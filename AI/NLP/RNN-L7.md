@@ -50,6 +50,49 @@ test_loss, test_acc = model.evaluate(x_test, y_test)
 
 print(f'Test Accuracy: {test_acc}')
 
+# Making Prediction
+
+import tensorflow as tf
+from tensorflow.keras.datasets import imdb
+from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras.preprocessing.text import text_to_word_sequence
+import numpy as np
+
+def predict_sentiment(model, review, word_index, maxlen=500):
+    """
+    Predict the sentiment of a given movie review.
+    
+    Parameters:
+        model: Trained Keras model.
+        review: String, raw movie review text.
+        word_index: Dictionary mapping words to their IMDB index.
+        maxlen: Integer, maximum length of the review sequence.
+    
+    Returns:
+        Sentiment prediction (0 = Negative, 1 = Positive)
+    """
+    # Tokenize and convert review to sequence
+    words = text_to_word_sequence(review)
+    sequence_data = [word_index[word] if word in word_index and word_index[word] < 10000 else 2 for word in words]
+    
+    # Pad sequence
+    sequence_data = sequence.pad_sequences([sequence_data], maxlen=maxlen)
+    
+    # Predict sentiment
+    prediction = model.predict(sequence_data)[0][0]
+    
+    # Convert prediction to label
+    return "Positive" if prediction > 0.5 else "Negative"
+
+# Load the IMDB word index
+word_index = imdb.get_word_index()
+
+# Example usage (after training the model):
+# model should be the trained RNN model
+test_review = "This movie was fantastic! The acting was great and the story was very engaging."
+print(predict_sentiment(model, test_review, word_index))
+
+
 ```
 
 ### Explanation:
