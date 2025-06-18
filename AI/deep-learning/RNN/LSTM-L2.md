@@ -1,3 +1,69 @@
+# What are LSTMs?
+
+**LSTM** stands for **Long Short-Term Memory**.
+It's a type of **Recurrent Neural Network (RNN)**, designed to **remember patterns over long sequences** of data.
+
+Imagine reading a book—your brain remembers what happened in the previous chapter. LSTMs try to do the same for data: they remember important information **from earlier steps** in a sequence to make **better predictions** later.
+
+---
+
+## Why Were LSTMs Introduced?
+
+Standard RNNs could process sequences (like sentences or time series), but they had a **major problem**:
+
+### The **vanishing gradient problem**
+
+When training RNNs, the signal (or "gradient") gets weaker as it goes back through many steps.
+This made it **very hard for RNNs to learn long-term dependencies** (e.g., remembering the subject of a sentence when predicting the verb).
+
+**LSTMs were introduced in 1997** by Hochreiter and Schmidhuber to solve this.
+
+---
+
+## How Do LSTMs Fix This?
+
+LSTMs use a **special structure called memory cells**, with **gates** that control the flow of information:
+
+* **Forget Gate**: Decides what to forget from the past.
+* **Input Gate**: Decides what new information to store.
+* **Output Gate**: Decides what to send to the next step.
+
+This makes them **great at keeping important information for a long time**, and ignoring what’s not important.
+
+---
+
+## Pros of LSTMs
+
+1. **Can remember long sequences** of information.
+2. **Solve vanishing gradient problem**, unlike regular RNNs.
+3. Work well for:
+
+   * Text (language modeling, machine translation)
+   * Time series forecasting (e.g., stock prices)
+   * Speech recognition
+
+---
+
+## Cons of LSTMs
+
+1. **Complex**: More parameters and slower to train.
+2. **Harder to parallelize**: Each step depends on the previous one.
+3. **Outperformed by newer models** like Transformers (used in GPT, BERT).
+
+---
+
+## In Summary:
+
+| Feature        | LSTM Explanation                       |
+| -------------- | -------------------------------------- |
+| Goal           | Learn from sequences over time         |
+| Key Innovation | Memory cell with gates                 |
+| Solves Problem | Long-term memory & vanishing gradients |
+| Best For       | Language, time series, speech, etc.    |
+| Limitation     | Complexity and training time           |
+
+---
+
 # LSTM 
 
 Here's a beginner-friendly tutorial for building a simple LSTM model using TensorFlow for sentiment analysis on the IMDb movie reviews dataset:
